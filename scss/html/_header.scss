@@ -1,8 +1,9 @@
-/* estilos header */
 @import "../utilidades/variables";
 
+/* estilos header */
+
 .navbar{
-    background-color: black;
+    background-color: $color-fondo;
     color: white;
     align-items: right;
     img{

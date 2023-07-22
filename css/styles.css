@@ -55,14 +55,15 @@ a {
   .index .servicios-index .tarjetas-servicios {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     margin: 10px; }
     .index .servicios-index .tarjetas-servicios .tarjeta {
       display: flex;
       flex-direction: column;
-      border: 2px solid white; }
+      border: 2px solid white;
+      align-items: center; }
       .index .servicios-index .tarjetas-servicios .tarjeta img {
-        width: 100%;
+        width: 18rem;
         padding: 10px; }
       .index .servicios-index .tarjetas-servicios .tarjeta span {
         color: #E4DE1B; }
@@ -96,7 +97,11 @@ a {
       height: 300px;
       border-radius: 50%;
       font-size: 4rem;
-      color: white; }
+      color: white;
+      transition: 1s; }
+    .servicios .cajas-servicios .caja-unias a:hover {
+      transform: scale(1.1);
+      transition: 1s; }
     .servicios .cajas-servicios .caja-pestanias a {
       background-image: url("/img/Pestaña.jpg");
       background-size: cover;
@@ -109,7 +114,85 @@ a {
       height: 300px;
       border-radius: 50%;
       font-size: 4rem;
-      color: white; }
+      color: white;
+      transition: 1s; }
+    .servicios .cajas-servicios .caja-pestanias a:hover {
+      transform: scale(1.1);
+      transition: 1s; }
+
+/* estilos servicios-unias */
+.servicios-unias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black; }
+  .servicios-unias .titulo-servicios-unias h1 {
+    color: #E4DE1B; }
+  .servicios-unias .tarjetas-unias {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    gap: 7rem;
+    padding: 10px 50px 10px 50px; }
+    .servicios-unias .tarjetas-unias .tarjeta-uno {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno h2 {
+        color: #E4DE1B; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno p {
+        color: #BCBCB5;
+        font-size: 1.5rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno img {
+        border-radius: 10px; }
+    .servicios-unias .tarjetas-unias .tarjeta-dos {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos h2 {
+        color: #E4DE1B; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos p {
+        color: #BCBCB5;
+        font-size: 1.5rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos img {
+        border-radius: 10px; }
+
+/* estilos servicios-unias */
+.servicios-pestanias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black; }
+  .servicios-pestanias .titulo-servicios-pestanias h1 {
+    color: #E4DE1B; }
+  .servicios-pestanias .tarjetas-pestanias {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    gap: 7rem;
+    padding: 10px 50px 10px 50px; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-uno {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno h2 {
+        color: #E4DE1B; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno p {
+        color: #BCBCB5;
+        font-size: 1.5rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno img {
+        border-radius: 10px; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-dos {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos h2 {
+        color: #E4DE1B; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos p {
+        color: #BCBCB5;
+        font-size: 1.5rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
+        border-radius: 10px; }
 
 /* estilos conocenos */
 .conocenos {
@@ -233,4 +316,5 @@ a {
       width: 3rem; }
   #contacto .copyright {
     grid-area: copyright;
-    color: #BCBCB5; }
+    color: #BCBCB5;
+    background-color: black; }

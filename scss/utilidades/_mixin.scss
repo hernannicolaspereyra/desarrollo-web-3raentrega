@@ -1,4 +1,4 @@
-@mixin estilos-servicios{
+@mixin boton-servicios{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,4 +10,10 @@
     border-radius: 50%;
     font-size: 4rem;
     color: white;
+}
+
+@mixin estilos-tarjetas-servicios{
+    display: flex;
+    gap: 2rem;
+    justify-content:space-between;
 }

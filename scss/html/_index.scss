@@ -33,7 +33,7 @@
         gap: 3rem;
         text-align: center;
         padding-top: 15px;
-        background-color: black;
+        background-color: $color-fondo;
         .texto-servicios{
             h2{
                 color: $color-titulo;
@@ -42,14 +42,15 @@
         .tarjetas-servicios{
             display: flex;
             flex-direction: row;
-            gap: 2rem;
+            gap: 1rem;
             margin: 10px;
             .tarjeta{
                 display: flex;
                 flex-direction: column;
                 border: 2px solid white;
+                align-items: center;
                 img{
-                    width: 100%;
+                    width: 18rem;
                     padding: 10px;
                 }
                 span{

@@ -4,7 +4,7 @@
 /* estilos servicios */
 
 .servicios{
-    background-color: black;
+    background-color: $color-fondo;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +21,23 @@
         .caja-unias{
             a{
                 background-image: url("/img/uñas.jpg");
-                @include estilos-servicios;
+                @include boton-servicios;
+                transition: 1s;
+            }
+            a:hover{
+                transform: scale(1.1);
+                transition: 1s;
             }
         }
         .caja-pestanias{
             a{
                 background-image: url("/img/Pestaña.jpg");
-                @include estilos-servicios;
+                @include boton-servicios;
+                transition: 1s;
+            }
+            a:hover{
+                transform: scale(1.1);
+                transition: 1s;
             }           
         }
     }

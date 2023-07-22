@@ -1,0 +1,53 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* estilos servicios-unias */
+
+.servicios-pestanias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-fondo;
+    .titulo-servicios-pestanias{
+        h1{
+            color: $color-titulo;
+        }
+    }
+    .tarjetas-pestanias{
+        display: flex;
+        flex-direction: column;
+        width: 60rem;
+        gap: 7rem;
+        padding: 10px 50px 10px 50px;
+        .tarjeta-uno{
+            @include estilos-tarjetas-servicios;
+            .descripcion-tarjeta-uno{
+                h2{
+                    color: $color-titulo;
+                }
+                p{
+                    color: $color-parrafos;
+                    font-size: 1.5rem;
+                }
+            }
+            img{
+                border-radius: 10px;
+            }
+        }
+        .tarjeta-dos{
+            @include estilos-tarjetas-servicios;
+            .descripcion-tarjeta-dos{
+                h2{
+                    color: $color-titulo;
+                }
+                p{
+                    color: $color-parrafos;
+                    font-size: 1.5rem;
+                }
+            }
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}
