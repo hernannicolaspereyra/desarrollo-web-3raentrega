@@ -16,12 +16,12 @@ a{
     text-decoration: none !important;
 }
   
-@import "html/header";
-@import "html/index";
-@import "html/servicios";
-@import "html/servicios-unias";
-@import "html/servicios-pestanias";
-@import "html/conocenos";
-@import "html/reserva-turno";
-@import "html/footer";
+@import "../scss/html/header";
+@import "../scss/html/index";
+@import "../scss/html/servicios";
+@import "../scss/html/servicios-unias";
+@import "../scss/html/servicios-pestanias";
+@import "../scss/html/conocenos";
+@import "../scss/html/reserva-turno";
+@import "../scss/html/footer";
 

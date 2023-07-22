@@ -14,12 +14,15 @@ a {
 /* estilos header */
 .navbar {
   background-color: black;
-  color: white;
-  align-items: right; }
+  color: white; }
   .navbar img {
     width: 7rem; }
   .navbar a {
     color: #BCBCB5 !important; }
+  .navbar a:hover {
+    background-color: #E4DE1B;
+    color: black !important;
+    border-radius: 5%; }
 
 /* estilos index */
 /*estilos index */

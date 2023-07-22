@@ -5,11 +5,15 @@
 .navbar{
     background-color: $color-fondo;
     color: white;
-    align-items: right;
     img{
         width: 7rem;
     }
     a{
         color: $color-parrafos !important;
+    }
+    a:hover{
+        background-color: $color-titulo;
+        color: $color-fondo !important;
+        border-radius: 5%;
     }
 }
