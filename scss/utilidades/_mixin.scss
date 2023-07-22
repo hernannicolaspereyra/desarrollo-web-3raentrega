@@ -1,0 +1,13 @@
+@mixin estilos-servicios{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: white;
+}

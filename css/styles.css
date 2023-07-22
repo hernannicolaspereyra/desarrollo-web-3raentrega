@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+a {
+  text-decoration: none !important; }
+
+/* estilos header */
+.navbar {
+  background-color: black;
+  color: white;
+  align-items: right; }
+  .navbar img {
+    width: 7rem; }
+  .navbar a {
+    color: #BCBCB5 !important; }
+
+/* estilos index */
+/*estilos index */
+.index .imagen-presentacion {
+  background-image: url("../img/salon-belleza.webp");
+  background-size: 100%;
+  background-position: center;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  justify-content: center; }
+  .index .imagen-presentacion .texto-presentacion {
+    padding-left: 30px; }
+    .index .imagen-presentacion .texto-presentacion h1 {
+      font-size: 5rem;
+      color: #E4DE1B; }
+    .index .imagen-presentacion .texto-presentacion p {
+      font-size: 2rem;
+      width: 50%;
+      color: white; }
+
+.index .servicios-index {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  padding-top: 15px;
+  background-color: black; }
+  .index .servicios-index .texto-servicios h2 {
+    color: #E4DE1B; }
+  .index .servicios-index .tarjetas-servicios {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 10px; }
+    .index .servicios-index .tarjetas-servicios .tarjeta {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid white; }
+      .index .servicios-index .tarjetas-servicios .tarjeta img {
+        width: 100%;
+        padding: 10px; }
+      .index .servicios-index .tarjetas-servicios .tarjeta span {
+        color: #E4DE1B; }
+      .index .servicios-index .tarjetas-servicios .tarjeta p {
+        color: #BCBCB5; }
+  .index .servicios-index .link-mas-servicios {
+    padding-bottom: 20px; }
+
+/* estilos servicios */
+.servicios {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 30px; }
+  .servicios .titulo-servicios h1 {
+    color: #E4DE1B; }
+  .servicios .cajas-servicios {
+    display: flex;
+    gap: 6rem; }
+    .servicios .cajas-servicios .caja-unias a {
+      background-image: url("/img/uñas.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      font-size: 4rem;
+      color: white; }
+    .servicios .cajas-servicios .caja-pestanias a {
+      background-image: url("/img/Pestaña.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      font-size: 4rem;
+      color: white; }
+
+/* estilos conocenos */
+.conocenos {
+  display: flex;
+  flex-direction: column;
+  background-color: black; }
+  .conocenos .por-que-elegirnos {
+    display: flex;
+    flex-direction: column; }
+    .conocenos .por-que-elegirnos .img-con-titulo {
+      height: 6rem;
+      padding-top: 20px;
+      text-align: center; }
+      .conocenos .por-que-elegirnos .img-con-titulo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .conocenos .por-que-elegirnos .img-con-titulo span {
+        position: relative;
+        bottom: 70px;
+        font-size: 3rem;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .conocenos .por-que-elegirnos .info-elegirnos {
+      padding: 10px; }
+      .conocenos .por-que-elegirnos .info-elegirnos .img-elegirnos img {
+        width: 70%;
+        float: left;
+        object-fit: cover;
+        margin: 0 10px; }
+      .conocenos .por-que-elegirnos .info-elegirnos .descripcion-elegirnos p {
+        color: #BCBCB5;
+        font-size: 1.5rem; }
+  .conocenos .staff .img-con-titulo {
+    height: 6rem;
+    padding-top: 20px;
+    text-align: center; }
+    .conocenos .staff .img-con-titulo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .conocenos .staff .img-con-titulo span {
+      position: relative;
+      bottom: 70px;
+      font-size: 3rem;
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .conocenos .staff .especialista {
+    display: flex;
+    gap: 2rem;
+    padding: 20px; }
+    .conocenos .staff .especialista span {
+      font-size: 2rem;
+      color: #E4DE1B; }
+    .conocenos .staff .especialista p {
+      color: #BCBCB5;
+      font-size: 1.5rem; }
+    .conocenos .staff .especialista .img-especialista img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+/* estilos reserva-turno */
+.reserva-turno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 20px; }
+  .reserva-turno .seleccion-turno {
+    border: 3px solid white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 50px 5px 50px; }
+    .reserva-turno .seleccion-turno .titulo-seleccion h1 {
+      color: #E4DE1B;
+      font-size: 6rem; }
+    .reserva-turno .seleccion-turno .titulo-seleccion p {
+      color: #E4DE1B; }
+    .reserva-turno .seleccion-turno .input-seleccion form div {
+      padding: 10px; }
+    .reserva-turno .seleccion-turno .input-seleccion form input {
+      width: 200px; }
+    .reserva-turno .seleccion-turno .input-seleccion form select {
+      width: 200px; }
+  .reserva-turno .botones-seleccion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px; }
+
+/* estilos footer */
+#contacto {
+  display: grid;
+  grid-template-areas: "horarios direccion botones-contacto" "copyright copyright copyright";
+  padding-top: 5px;
+  text-align: center;
+  background-color: #353535; }
+  #contacto .horarios {
+    grid-area: horarios; }
+    #contacto .horarios h2 {
+      color: #E4DE1B; }
+    #contacto .horarios p {
+      color: #BCBCB5; }
+  #contacto .direccion {
+    grid-area: direccion; }
+    #contacto .direccion h2 {
+      color: #E4DE1B; }
+    #contacto .direccion p {
+      color: #BCBCB5; }
+  #contacto .botones-contacto {
+    grid-area: botones-contacto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    #contacto .botones-contacto .whatsapp a img {
+      width: 3rem; }
+    #contacto .botones-contacto .instagram a img {
+      width: 3rem; }
+  #contacto .copyright {
+    grid-area: copyright;
+    color: #BCBCB5; }

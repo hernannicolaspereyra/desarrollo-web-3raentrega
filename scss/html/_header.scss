@@ -1,0 +1,14 @@
+/* estilos header */
+@import "../utilidades/variables";
+
+.navbar{
+    background-color: black;
+    color: white;
+    align-items: right;
+    img{
+        width: 7rem;
+    }
+    a{
+        color: $color-parrafos !important;
+    }
+}

@@ -1,0 +1,67 @@
+/* estilos index */
+@import "../utilidades/variables";
+
+/*estilos index */
+
+.index{ 
+    .imagen-presentacion{
+        background-image: url("../img/salon-belleza.webp");
+        background-size: 100%;
+        background-position: center;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        .texto-presentacion{
+            padding-left: 30px;
+            h1{
+                font-size: 5rem;
+                color: $color-titulo;
+            }
+            p{
+                font-size: 2rem;
+                width: 50%;
+                color: white;
+            }
+        }
+    }
+    .servicios-index{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        padding-top: 15px;
+        background-color: black;
+        .texto-servicios{
+            h2{
+                color: $color-titulo;
+            }
+        }
+        .tarjetas-servicios{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 10px;
+            .tarjeta{
+                display: flex;
+                flex-direction: column;
+                border: 2px solid white;
+                img{
+                    width: 100%;
+                    padding: 10px;
+                }
+                span{
+                    color: $color-titulo;
+                }
+                p{
+                    color: $color-parrafos;
+                }
+            }
+        }
+        .link-mas-servicios{
+            padding-bottom: 20px;
+        }
+    }
+}

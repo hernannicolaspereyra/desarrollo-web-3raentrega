@@ -1,0 +1,25 @@
+
+
+
+/* estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none !important;
+}
+  
+@import "html/header";
+@import "html/index";
+@import "html/servicios";
+@import "html/conocenos";
+@import "html/reserva-turno";
+@import "html/footer";
+

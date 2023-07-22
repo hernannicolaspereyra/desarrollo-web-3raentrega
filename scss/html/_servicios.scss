@@ -1,0 +1,34 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* estilos servicios */
+
+.servicios{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 30px;
+    .titulo-servicios{
+        h1{
+            color: $color-titulo;
+        }
+    }
+    .cajas-servicios{
+        display: flex;
+        gap: 6rem;
+        .caja-unias{
+            a{
+                background-image: url("/img/uñas.jpg");
+                @include estilos-servicios;
+            }
+        }
+        .caja-pestanias{
+            a{
+                background-image: url("/img/Pestaña.jpg");
+                @include estilos-servicios;
+            }           
+        }
+    }
+}

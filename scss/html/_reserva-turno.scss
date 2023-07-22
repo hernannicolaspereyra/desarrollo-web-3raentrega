@@ -1,0 +1,47 @@
+@import "../utilidades/variables";
+
+/* estilos reserva-turno */ 
+
+.reserva-turno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    .seleccion-turno{
+        border: 3px solid white;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 0 50px 5px 50px;
+        .titulo-seleccion{
+            h1{
+                color: $color-titulo;
+                font-size: 6rem;
+            }
+            p{
+                color: $color-titulo;
+            }
+        }
+        .input-seleccion{
+            form{
+                div{
+                    padding: 10px;
+                }
+                input{
+                    width: 200px;
+                }
+                select{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .botones-seleccion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+}

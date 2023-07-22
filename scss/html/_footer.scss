@@ -1,0 +1,55 @@
+@import "../utilidades/variables";
+
+/* estilos footer */
+
+#contacto{
+    display: grid;
+    grid-template-areas: 
+    "horarios direccion botones-contacto"
+    "copyright copyright copyright";
+    padding-top: 5px;
+    text-align: center;
+    background-color: $color-footer;
+    .horarios{
+        grid-area: horarios;
+        h2{
+            color: $color-titulo;
+        }
+        p{
+            color: $color-parrafos;
+        }
+    }
+    .direccion{
+        grid-area: direccion;
+        h2{
+            color: $color-titulo;
+        }
+        p{
+            color: $color-parrafos;
+        }
+    }
+    .botones-contacto{
+        grid-area: botones-contacto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .whatsapp{
+            a{
+                img{
+                    width: 3rem;
+                }
+            }
+        }
+        .instagram{
+            a{
+                img{
+                    width: 3rem;
+                }
+            }
+        }
+    }
+    .copyright{
+        grid-area: copyright;
+        color: $color-parrafos;
+    }
+}
