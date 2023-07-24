@@ -20,7 +20,7 @@
         gap: 6rem;
         .caja-unias{
             a{
-                background-image: url("/img/uñas.jpg");
+                background-image: url("../img/unias.jpg");
                 @include boton-servicios;
                 transition: 1s;
             }
@@ -31,7 +31,7 @@
         }
         .caja-pestanias{
             a{
-                background-image: url("/img/Pestaña.jpg");
+                background-image: url("../img/Pestania.jpg");
                 @include boton-servicios;
                 transition: 1s;
             }

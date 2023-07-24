@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* estilos generales */
 * {
   padding: 0;
@@ -89,7 +88,7 @@ a {
     display: flex;
     gap: 6rem; }
     .servicios .cajas-servicios .caja-unias a {
-      background-image: url("/img/uñas.jpg");
+      background-image: url("../img/unias.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -106,7 +105,7 @@ a {
       transform: scale(1.1);
       transition: 1s; }
     .servicios .cajas-servicios .caja-pestanias a {
-      background-image: url("/img/Pestaña.jpg");
+      background-image: url("../img/Pestania.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -321,3 +320,149 @@ a {
     grid-area: copyright;
     color: #BCBCB5;
     background-color: black; }
+
+@media screen and (max-width: 600px) {
+  /* estilos index version celular */
+  .index .imagen-presentacion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem; }
+    .index .imagen-presentacion .texto-presentacion h1 {
+      font-size: 1.2rem; }
+    .index .imagen-presentacion .texto-presentacion p {
+      font-size: 1.2rem;
+      width: 80%; }
+  .index .servicios-index .tarjetas-servicios {
+    flex-direction: column; }
+  /* estilos servicios version celular */
+  .servicios .cajas-servicios {
+    flex-direction: column; }
+  /* estilos servicios-unias version celular */
+  .servicios-unias .tarjetas-unias {
+    width: 25rem; }
+    .servicios-unias .tarjetas-unias .tarjeta-uno {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno p {
+        font-size: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno img {
+        border-radius: 10px;
+        width: 20rem; }
+    .servicios-unias .tarjetas-unias .tarjeta-dos {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+      flex-direction: column-reverse; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos p {
+        font-size: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos img {
+        border-radius: 10px;
+        width: 20rem; }
+  /* estilos servicios-pestanias version celular */
+  .servicios-pestanias .tarjetas-pestanias {
+    width: 25rem; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-uno {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno p {
+        font-size: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno img {
+        border-radius: 10px;
+        width: 20rem; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-dos {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+      flex-direction: column-reverse; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos p {
+        font-size: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
+        border-radius: 10px;
+        width: 20rem; }
+  /* estilos conocenos version celular */
+  .conocenos .por-que-elegirnos .info-elegirnos {
+    display: flex;
+    flex-direction: column; }
+    .conocenos .por-que-elegirnos .info-elegirnos .img-elegirnos img {
+      object-fit: cover;
+      margin: 0;
+      width: 100%; }
+    .conocenos .por-que-elegirnos .info-elegirnos .descripcion-elegirnos p {
+      font-size: 1rem; }
+  .conocenos .staff .especialista {
+    flex-direction: column; }
+    .conocenos .staff .especialista p {
+      font-size: 1rem; } }
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  /* estilos index version tablet */
+  .index .imagen-presentacion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem; }
+    .index .imagen-presentacion .texto-presentacion h1 {
+      font-size: 1.7rem; }
+    .index .imagen-presentacion .texto-presentacion p {
+      font-size: 1.7rem;
+      width: 80%; }
+  .index .servicios-index .tarjetas-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); }
+  /* estilos servicios version tablet */
+  .servicios .cajas-servicios {
+    gap: 1.2rem; }
+    .servicios .cajas-servicios .caja-unias a {
+      width: 250px;
+      height: 250px;
+      font-size: 3rem; }
+    .servicios .cajas-servicios .caja-pestanias a {
+      width: 250px;
+      height: 250px;
+      font-size: 3rem; }
+  /* estilos servicios-unias version tablet */
+  .servicios-unias .tarjetas-unias {
+    width: 35rem; }
+    .servicios-unias .tarjetas-unias .tarjeta-uno {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno img {
+        border-radius: 10px;
+        width: 25rem; }
+    .servicios-unias .tarjetas-unias .tarjeta-dos {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+      flex-direction: column-reverse; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos img {
+        border-radius: 10px;
+        width: 25rem; }
+  /* estilos servicios-pestanias version tablet */
+  .servicios-pestanias .tarjetas-pestanias {
+    padding: 10px;
+    width: 35rem; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-uno {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno img {
+        border-radius: 10px;
+        width: 25rem; }
+    .servicios-pestanias .tarjetas-pestanias .tarjeta-dos {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+      flex-direction: column-reverse; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
+        border-radius: 10px;
+        width: 25rem; } }
