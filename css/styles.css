@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 body {
   background-color: black; }
@@ -257,6 +258,9 @@ a {
       height: 100%;
       object-fit: cover; }
 
+.reserva-turno .seleccion-turno .input-seleccion form input, .reserva-turno .seleccion-turno .input-seleccion form select {
+  width: 200px; }
+
 /* estilos reserva-turno */
 .reserva-turno {
   display: flex;
@@ -278,10 +282,6 @@ a {
       color: #E4DE1B; }
     .reserva-turno .seleccion-turno .input-seleccion form div {
       padding: 10px; }
-    .reserva-turno .seleccion-turno .input-seleccion form input {
-      width: 200px; }
-    .reserva-turno .seleccion-turno .input-seleccion form select {
-      width: 200px; }
   .reserva-turno .botones-seleccion {
     display: flex;
     flex-direction: column;
