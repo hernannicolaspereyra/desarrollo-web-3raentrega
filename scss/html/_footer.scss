@@ -32,19 +32,30 @@
         grid-area: botones-contacto;
         display: flex;
         flex-direction: column;
+        padding-top: 10px;
         gap: 3rem;
         .whatsapp{
             a{
+                transition: 1s;
                 img{
-                    width: 3rem;
+                    width: 3rem;   
                 }
+            }
+            a:hover{
+                transition: 1s;
+                filter: drop-shadow(6px 6px 6px #57F06E);
             }
         }
         .instagram{
             a{
+                transition: 1s;
                 img{
                     width: 3rem;
                 }
+            }
+            a:hover{
+                filter: drop-shadow(6px 6px 6px #E4102C);
+                transition: 1s;
             }
         }
     }

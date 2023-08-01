@@ -18,16 +18,17 @@ a {
   .navbar img {
     width: 7rem; }
   .navbar a {
-    color: #BCBCB5 !important; }
+    color: #BCBCB5 !important;
+    transition: 0.5s; }
   .navbar a:hover {
     background-color: #E4DE1B;
     color: black !important;
-    border-radius: 5%; }
+    border-radius: 5%;
+    transition: 0.5s; }
 
 /* estilos index */
-/*estilos index */
 .index .imagen-presentacion {
-  background-image: url("../img/salon-belleza.webp");
+  background-image: url("../img/salon-belleza.jpg");
   background-size: 100%;
   background-position: center;
   height: 40rem;
@@ -40,11 +41,13 @@ a {
     padding-left: 30px; }
     .index .imagen-presentacion .texto-presentacion h1 {
       font-size: 5rem;
-      color: #E4DE1B; }
+      color: #E4DE1B;
+      text-shadow: 2px 2px black; }
     .index .imagen-presentacion .texto-presentacion p {
       font-size: 2rem;
       width: 50%;
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px black; }
 
 .index .servicios-index {
   display: flex;
@@ -67,13 +70,25 @@ a {
       align-items: center; }
       .index .servicios-index .tarjetas-servicios .tarjeta img {
         width: 18rem;
-        padding: 10px; }
+        padding: 10px;
+        border-radius: 5%; }
       .index .servicios-index .tarjetas-servicios .tarjeta span {
-        color: #E4DE1B; }
+        color: #E4DE1B;
+        text-decoration: underline; }
       .index .servicios-index .tarjetas-servicios .tarjeta p {
         color: #BCBCB5; }
   .index .servicios-index .link-mas-servicios {
     padding-bottom: 20px; }
+    .index .servicios-index .link-mas-servicios a {
+      border: 2px solid #E4DE1B;
+      color: #E4DE1B;
+      border-radius: 5%;
+      padding: 10px;
+      transition: 0.5s; }
+    .index .servicios-index .link-mas-servicios a:hover {
+      background-color: #E4DE1B;
+      color: black;
+      transition: 0.5s; }
 
 /* estilos servicios */
 .servicios {
@@ -89,7 +104,7 @@ a {
     display: flex;
     gap: 6rem; }
     .servicios .cajas-servicios .caja-unias a {
-      background-image: url("../img/unias.jpg");
+      background-image: url("../img/unias.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -104,6 +119,7 @@ a {
       transition: 1s; }
     .servicios .cajas-servicios .caja-unias a:hover {
       transform: scale(1.1);
+      text-shadow: 2px 2px black;
       transition: 1s; }
     .servicios .cajas-servicios .caja-pestanias a {
       background-image: url("../img/Pestania.jpg");
@@ -121,6 +137,7 @@ a {
       transition: 1s; }
     .servicios .cajas-servicios .caja-pestanias a:hover {
       transform: scale(1.1);
+      text-shadow: 2px 2px black;
       transition: 1s; }
 
 /* estilos servicios-unias */
@@ -142,10 +159,21 @@ a {
       gap: 2rem;
       justify-content: space-between; }
       .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno h2 {
-        color: #E4DE1B; }
+        color: #E4DE1B;
+        text-decoration: underline; }
       .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno p {
         color: #BCBCB5;
         font-size: 1.5rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno a {
+        border: 2px solid #E4DE1B;
+        color: #E4DE1B;
+        border-radius: 5%;
+        padding: 10px;
+        transition: 0.5s; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno a:hover {
+        background-color: #E4DE1B;
+        color: black;
+        transition: 0.5s; }
       .servicios-unias .tarjetas-unias .tarjeta-uno img {
         border-radius: 10px; }
     .servicios-unias .tarjetas-unias .tarjeta-dos {
@@ -153,10 +181,21 @@ a {
       gap: 2rem;
       justify-content: space-between; }
       .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos h2 {
-        color: #E4DE1B; }
+        color: #E4DE1B;
+        text-decoration: underline; }
       .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos p {
         color: #BCBCB5;
         font-size: 1.5rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos a {
+        border: 2px solid #E4DE1B;
+        color: #E4DE1B;
+        border-radius: 5%;
+        padding: 10px;
+        transition: 0.5s; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos a:hover {
+        background-color: #E4DE1B;
+        color: black;
+        transition: 0.5s; }
       .servicios-unias .tarjetas-unias .tarjeta-dos img {
         border-radius: 10px; }
 
@@ -179,10 +218,21 @@ a {
       gap: 2rem;
       justify-content: space-between; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno h2 {
-        color: #E4DE1B; }
+        color: #E4DE1B;
+        text-decoration: underline; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno p {
         color: #BCBCB5;
         font-size: 1.5rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno a {
+        border: 2px solid #E4DE1B;
+        color: #E4DE1B;
+        border-radius: 5%;
+        padding: 10px;
+        transition: 0.5s; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno a:hover {
+        background-color: #E4DE1B;
+        color: black;
+        transition: 0.5s; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-uno img {
         border-radius: 10px; }
     .servicios-pestanias .tarjetas-pestanias .tarjeta-dos {
@@ -190,10 +240,21 @@ a {
       gap: 2rem;
       justify-content: space-between; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos h2 {
-        color: #E4DE1B; }
+        color: #E4DE1B;
+        text-decoration: underline; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos p {
         color: #BCBCB5;
         font-size: 1.5rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos a {
+        border: 2px solid #E4DE1B;
+        color: #E4DE1B;
+        border-radius: 5%;
+        padding: 10px;
+        transition: 0.5s; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos a:hover {
+        background-color: #E4DE1B;
+        color: black;
+        transition: 0.5s; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
         border-radius: 10px; }
 
@@ -286,7 +347,18 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    gap: 1rem; }
+    .reserva-turno .botones-seleccion a {
+      border: 2px solid #E4DE1B;
+      color: #E4DE1B;
+      border-radius: 5%;
+      padding: 10px;
+      transition: 0.5s; }
+    .reserva-turno .botones-seleccion a:hover {
+      background-color: #E4DE1B;
+      color: black;
+      transition: 0.5s; }
 
 /* estilos footer */
 #contacto {
@@ -311,11 +383,22 @@ a {
     grid-area: botones-contacto;
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
     gap: 3rem; }
-    #contacto .botones-contacto .whatsapp a img {
-      width: 3rem; }
-    #contacto .botones-contacto .instagram a img {
-      width: 3rem; }
+    #contacto .botones-contacto .whatsapp a {
+      transition: 1s; }
+      #contacto .botones-contacto .whatsapp a img {
+        width: 3rem; }
+    #contacto .botones-contacto .whatsapp a:hover {
+      transition: 1s;
+      filter: drop-shadow(6px 6px 6px #57F06E); }
+    #contacto .botones-contacto .instagram a {
+      transition: 1s; }
+      #contacto .botones-contacto .instagram a img {
+        width: 3rem; }
+    #contacto .botones-contacto .instagram a:hover {
+      filter: drop-shadow(6px 6px 6px #E4102C);
+      transition: 1s; }
   #contacto .copyright {
     grid-area: copyright;
     color: #BCBCB5;
@@ -339,14 +422,18 @@ a {
     flex-direction: column; }
   /* estilos servicios-unias version celular */
   .servicios-unias .tarjetas-unias {
-    width: 25rem; }
+    width: 0;
+    padding-bottom: 20px;
+    gap: 4rem; }
     .servicios-unias .tarjetas-unias .tarjeta-uno {
       align-items: center;
       text-align: center;
       flex-direction: column;
       gap: 1rem; }
-      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno p {
-        font-size: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno {
+        width: 20rem; }
+        .servicios-unias .tarjetas-unias .tarjeta-uno .descripcion-tarjeta-uno p {
+          font-size: 1rem; }
       .servicios-unias .tarjetas-unias .tarjeta-uno img {
         border-radius: 10px;
         width: 20rem; }
@@ -356,21 +443,27 @@ a {
       flex-direction: column;
       gap: 1rem;
       flex-direction: column-reverse; }
-      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos p {
-        font-size: 1rem; }
+      .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos {
+        width: 20rem; }
+        .servicios-unias .tarjetas-unias .tarjeta-dos .descripcion-tarjeta-dos p {
+          font-size: 1rem; }
       .servicios-unias .tarjetas-unias .tarjeta-dos img {
         border-radius: 10px;
         width: 20rem; }
   /* estilos servicios-pestanias version celular */
   .servicios-pestanias .tarjetas-pestanias {
-    width: 25rem; }
+    width: 0;
+    padding-bottom: 20px;
+    gap: 4rem; }
     .servicios-pestanias .tarjetas-pestanias .tarjeta-uno {
       align-items: center;
       text-align: center;
       flex-direction: column;
       gap: 1rem; }
-      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno p {
-        font-size: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno {
+        width: 20rem; }
+        .servicios-pestanias .tarjetas-pestanias .tarjeta-uno .descripcion-tarjeta-uno p {
+          font-size: 1rem; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-uno img {
         border-radius: 10px;
         width: 20rem; }
@@ -380,8 +473,10 @@ a {
       flex-direction: column;
       gap: 1rem;
       flex-direction: column-reverse; }
-      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos p {
-        font-size: 1rem; }
+      .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos {
+        width: 20rem; }
+        .servicios-pestanias .tarjetas-pestanias .tarjeta-dos .descripcion-tarjeta-dos p {
+          font-size: 1rem; }
       .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
         border-radius: 10px;
         width: 20rem; }

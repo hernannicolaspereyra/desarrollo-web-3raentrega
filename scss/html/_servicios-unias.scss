@@ -24,10 +24,17 @@
             .descripcion-tarjeta-uno{
                 h2{
                     color: $color-titulo;
+                    text-decoration: underline;
                 }
                 p{
                     color: $color-parrafos;
                     font-size: 1.5rem;
+                }
+                a{
+                    @include estilos-button;
+                }
+                a:hover{
+                    @include estilos-button-hover
                 }
             }
             img{
@@ -39,10 +46,17 @@
             .descripcion-tarjeta-dos{
                 h2{
                     color: $color-titulo;
+                    text-decoration: underline;
                 }
                 p{
                     color: $color-parrafos;
                     font-size: 1.5rem;
+                }
+                a{
+                    @include estilos-button;
+                }
+                a:hover{
+                    @include estilos-button-hover
                 }
             }
             img{

@@ -1,5 +1,6 @@
 @import "../utilidades/variables";
 @import "../utilidades/extend";
+@import "../utilidades/mixin";
 
 /* estilos reserva-turno */ 
 
@@ -44,5 +45,12 @@
         flex-direction: column;
         text-align: center;
         padding-top: 20px;
+        gap: 1rem;
+        a{
+            @include estilos-button
+        }
+        a:hover{
+            @include estilos-button-hover
+        }
     }
 }

@@ -10,10 +10,12 @@
     }
     a{
         color: $color-parrafos !important;
+        transition: 0.5s;
     }
     a:hover{
         background-color: $color-titulo;
         color: $color-fondo !important;
         border-radius: 5%;
+        transition: 0.5s;
     }
 }

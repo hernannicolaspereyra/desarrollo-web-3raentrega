@@ -1,11 +1,11 @@
-/* estilos index */
 @import "../utilidades/variables";
+@import "../utilidades/mixin";
 
-/*estilos index */
+/* estilos index */
 
 .index{ 
     .imagen-presentacion{
-        background-image: url("../img/salon-belleza.webp");
+        background-image: url("../img/salon-belleza.jpg");
         background-size: 100%;
         background-position: center;
         height: 40rem;
@@ -19,11 +19,13 @@
             h1{
                 font-size: 5rem;
                 color: $color-titulo;
+                text-shadow: 2px 2px black;
             }
             p{
                 font-size: 2rem;
                 width: 50%;
                 color: white;
+                text-shadow: 2px 2px black;
             }
         }
     }
@@ -52,9 +54,11 @@
                 img{
                     width: 18rem;
                     padding: 10px;
+                    border-radius: 5%;
                 }
                 span{
                     color: $color-titulo;
+                    text-decoration: underline;
                 }
                 p{
                     color: $color-parrafos;
@@ -63,6 +67,12 @@
         }
         .link-mas-servicios{
             padding-bottom: 20px;
+            a{
+                @include estilos-button
+            }
+            a:hover{
+                @include estilos-button-hover
+            }
         }
     }
 }

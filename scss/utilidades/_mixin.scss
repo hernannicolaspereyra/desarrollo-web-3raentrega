@@ -17,3 +17,17 @@
     gap: 2rem;
     justify-content:space-between;
 }
+
+@mixin estilos-button{
+    border: 2px solid $color-titulo;
+    color: $color-titulo;
+    border-radius: 5%;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+@mixin estilos-button-hover{
+    background-color: $color-titulo;
+    color: $color-fondo;
+    transition: 0.5s;
+}
