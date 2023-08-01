@@ -1,23 +1,12 @@
+//utilidades
+
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../scss/utilidades/extend";
 
+//estilos escritorio
 
-/* estilos generales */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background-color: black;
-}
-
-a{
-    text-decoration: none !important;
-}
-  
+@import "../scss/html/estilos-generales";
 @import "../scss/html/header";
 @import "../scss/html/index";
 @import "../scss/html/servicios";
@@ -27,272 +16,26 @@ a{
 @import "../scss/html/reserva-turno";
 @import "../scss/html/footer";
 
+//estilos mobile
+
 @media screen and (max-width:600px){
     
-    /* estilos index version celular */
-
-    .index{
-        .imagen-presentacion{
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 20rem;
-            .texto-presentacion{
-                h1{
-                    font-size: 1.2rem;
-                }
-                p{
-                    font-size: 1.2rem;
-                    width: 80%;
-                }
-            }
-        }
-        .servicios-index{
-            .tarjetas-servicios{
-                flex-direction: column;
-            }
-        }
-    }
-
-    /* estilos servicios version celular */
-
-    .servicios{
-        .cajas-servicios{
-            flex-direction: column;
-        }
-    }
-
-    /* estilos servicios-unias version celular */
-
-    .servicios-unias{
-        .tarjetas-unias{
-            width: 0;
-            padding-bottom: 20px;
-            gap: 4rem;
-            .tarjeta-uno{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                .descripcion-tarjeta-uno{
-                    width: 20rem;
-                    p{
-                        font-size: 1rem;
-                    }
-                }
-                img{
-                    border-radius: 10px;
-                    width: 20rem;
-                }
-            }
-            .tarjeta-dos{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                flex-direction: column-reverse;
-                .descripcion-tarjeta-dos{
-                    width: 20rem;
-                    p{
-                        font-size: 1rem;
-                    }
-                }
-                img{
-                    border-radius: 10px;
-                    width: 20rem;
-                }
-            }
-        }
-    }
-
-    /* estilos servicios-pestanias version celular */
-
-    .servicios-pestanias{
-        .tarjetas-pestanias{
-            width: 0;
-            padding-bottom: 20px;
-            gap: 4rem;;
-            .tarjeta-uno{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                .descripcion-tarjeta-uno{
-                    width: 20rem;
-                    p{
-                        font-size: 1rem;
-                    }
-                }
-                img{
-                    border-radius: 10px;
-                    width: 20rem;
-                }
-            }
-            .tarjeta-dos{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                flex-direction: column-reverse;
-                .descripcion-tarjeta-dos{
-                    width: 20rem;
-                    p{
-                        font-size: 1rem;
-                    }
-                }
-                img{
-                    border-radius: 10px;
-                    width: 20rem;
-                }
-            }
-        }
-    }
-
-    /* estilos conocenos version celular */
-
-    .conocenos{
-        .por-que-elegirnos{
-            .info-elegirnos{
-                display: flex;
-                flex-direction: column;
-                .img-elegirnos{
-                    img{
-                        object-fit: cover;
-                        margin: 0;
-                        width: 100%;
-                    }
-                }
-                .descripcion-elegirnos{
-                    p{
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-        .staff{
-            .especialista{
-                flex-direction: column;
-                span{
-
-                }
-                p{
-                    font-size: 1rem;
-                }
-                .img-especialista{
-                    
-                }
-            }
-        }
-    }
+    @import "../scss/html/estilos-mobile/index-mobile";
+    @import "../scss/html/estilos-mobile/servicios-mobile";
+    @import "../scss/html/estilos-mobile/servicios-unias-mobile";
+    @import "../scss/html/estilos-mobile/servicios-pestanias-mobile";
+    @import "../scss/html/estilos-mobile/conocenos-mobile";
+    
 }
+
+//estilos tablet
 
 @media screen and (min-width:600px) and (max-width:1024px){
 
-    /* estilos index version tablet */
-
-    .index{
-        .imagen-presentacion{
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 20rem;
-            .texto-presentacion{
-                h1{
-                    font-size: 1.7rem;
-                }
-                p{
-                    font-size: 1.7rem;
-                    width: 80%;
-                }
-            }
-        }
-        .servicios-index{
-            .tarjetas-servicios{
-                display: grid;
-                grid-template-columns: repeat(2,2fr);
-            }
-        }
-    }
-
-    /* estilos servicios version tablet */
-
-    .servicios{
-        .cajas-servicios{
-            gap: 1.2rem;
-            .caja-unias{
-                a{
-                    width: 250px;
-                    height: 250px;
-                    font-size: 3rem;
-                }
-
-            }
-            .caja-pestanias{
-                a{
-                    width: 250px;
-                    height: 250px;
-                    font-size: 3rem;                
-                }
-            }
-        }
-    }
-
-    /* estilos servicios-unias version tablet */
-
-    .servicios-unias{
-        .tarjetas-unias{
-            width: 35rem;
-            .tarjeta-uno{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                img{
-                    border-radius: 10px;
-                    width: 25rem;
-                }
-            }
-            .tarjeta-dos{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                flex-direction: column-reverse;
-                img{
-                    border-radius: 10px;
-                    width: 25rem;
-                }
-            }
-        }
-    }
-
-    /* estilos servicios-pestanias version tablet */
-
-    .servicios-pestanias{
-        .tarjetas-pestanias{
-            padding: 10px;
-            width: 35rem;
-            .tarjeta-uno{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                img{
-                    border-radius: 10px;
-                    width: 25rem;
-                }
-            }
-            .tarjeta-dos{
-                align-items: center;
-                text-align: center;
-                flex-direction: column;
-                gap: 1rem;
-                flex-direction: column-reverse;
-                img{
-                    border-radius: 10px;
-                    width: 25rem;
-                }
-            }
-        }
-    }
+    @import "../scss/html/estilos-tablet/index-tablet";
+    @import "../scss/html/estilos-tablet/servicios-tablet";
+    @import "../scss/html/estilos-tablet/servicios-unias-tablet";
+    @import "../scss/html/estilos-tablet/servicios-pestanias-tablet";
 }
 
 

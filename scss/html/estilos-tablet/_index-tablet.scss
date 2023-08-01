@@ -1,0 +1,24 @@
+/* estilos index version tablet */
+
+.index{
+    .imagen-presentacion{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+        .texto-presentacion{
+            h1{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.7rem;
+                width: 80%;
+            }
+        }
+    }
+    .servicios-index{
+        .tarjetas-servicios{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+        }
+    }
+}

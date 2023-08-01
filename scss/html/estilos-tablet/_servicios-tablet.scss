@@ -1,0 +1,22 @@
+/* estilos servicios version tablet */
+
+.servicios{
+    .cajas-servicios{
+        gap: 1.2rem;
+        .caja-unias{
+            a{
+                width: 250px;
+                height: 250px;
+                font-size: 3rem;
+            }
+
+        }
+        .caja-pestanias{
+            a{
+                width: 250px;
+                height: 250px;
+                font-size: 3rem;                
+            }
+        }
+    }
+}

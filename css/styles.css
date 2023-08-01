@@ -1,3 +1,6 @@
+.reserva-turno .seleccion-turno .input-seleccion form input, .reserva-turno .seleccion-turno .input-seleccion form select {
+  width: 200px; }
+
 /* estilos generales */
 * {
   padding: 0;
@@ -405,7 +408,7 @@ a {
     background-color: black; }
 
 @media screen and (max-width: 600px) {
-  /* estilos index version celular */
+  /* estilos index mobile */
   .index .imagen-presentacion {
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,10 +420,10 @@ a {
       width: 80%; }
   .index .servicios-index .tarjetas-servicios {
     flex-direction: column; }
-  /* estilos servicios version celular */
+  /* estilos servicios version mobile */
   .servicios .cajas-servicios {
     flex-direction: column; }
-  /* estilos servicios-unias version celular */
+  /* estilos servicios-unias mobile */
   .servicios-unias .tarjetas-unias {
     width: 0;
     padding-bottom: 20px;
@@ -450,7 +453,7 @@ a {
       .servicios-unias .tarjetas-unias .tarjeta-dos img {
         border-radius: 10px;
         width: 20rem; }
-  /* estilos servicios-pestanias version celular */
+  /* estilos servicios-pestanias version mobile */
   .servicios-pestanias .tarjetas-pestanias {
     width: 0;
     padding-bottom: 20px;
@@ -480,7 +483,7 @@ a {
       .servicios-pestanias .tarjetas-pestanias .tarjeta-dos img {
         border-radius: 10px;
         width: 20rem; }
-  /* estilos conocenos version celular */
+  /* estilos conocenos version mobile */
   .conocenos .por-que-elegirnos .info-elegirnos {
     display: flex;
     flex-direction: column; }

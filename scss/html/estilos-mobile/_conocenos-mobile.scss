@@ -1,0 +1,30 @@
+/* estilos conocenos version mobile */
+
+.conocenos{
+    .por-que-elegirnos{
+        .info-elegirnos{
+            display: flex;
+            flex-direction: column;
+            .img-elegirnos{
+                img{
+                    object-fit: cover;
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+            .descripcion-elegirnos{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .staff{
+        .especialista{
+            flex-direction: column;
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}

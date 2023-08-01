@@ -1,0 +1,23 @@
+/* estilos index mobile */
+
+.index{
+    .imagen-presentacion{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+        .texto-presentacion{
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1.2rem;
+                width: 80%;
+            }
+        }
+    }
+    .servicios-index{
+        .tarjetas-servicios{
+            flex-direction: column;
+        }
+    }
+}
