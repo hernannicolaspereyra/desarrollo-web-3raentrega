@@ -366,10 +366,12 @@ a {
 /* estilos footer */
 #contacto {
   display: grid;
-  grid-template-areas: "horarios direccion botones-contacto" "copyright copyright copyright";
+  grid-template-areas: "horarios direccion botones-contacto" "arriba arriba arriba" "copyright copyright copyright";
   padding-top: 5px;
   text-align: center;
   background-color: #353535; }
+  #contacto .boton-top {
+    grid-area: arriba; }
   #contacto .horarios {
     grid-area: horarios; }
     #contacto .horarios h2 {
@@ -386,7 +388,7 @@ a {
     grid-area: botones-contacto;
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 12px 0;
     gap: 3rem; }
     #contacto .botones-contacto .whatsapp a {
       transition: 1s; }
@@ -402,6 +404,10 @@ a {
     #contacto .botones-contacto .instagram a:hover {
       filter: drop-shadow(6px 6px 6px #E4102C);
       transition: 1s; }
+  #contacto .arriba {
+    grid-area: arriba; }
+    #contacto .arriba img {
+      width: 3rem; }
   #contacto .copyright {
     grid-area: copyright;
     color: #BCBCB5;
